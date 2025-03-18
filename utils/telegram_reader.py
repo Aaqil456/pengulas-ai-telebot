@@ -1,0 +1,15 @@
+from telethon import TelegramClient
+
+async def fetch_latest_messages(api_id, api_hash, channel_username, limit=5):
+    client = TelegramClient("session", api_id, api_hash)
+    await client.start()
+    messages = []
+    async for message in client.iter_messages(channel_username, limit=limit):
+        if message.text:
+            messages.append({
+                "id": message.id,
+                "text": message.text,
+                "date": str(message.date)
+            })
+    await client.disconnect()
+    return messages
