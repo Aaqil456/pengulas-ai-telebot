@@ -1,0 +1,6 @@
+telethon
+google-auth
+google-generativeai
+gspread
+oauth2client
+aiohttp
