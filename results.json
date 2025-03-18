@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-03-18T15:42:10.123456",
+  "messages": [
+    {
+      "id": 20345,
+      "original_text": "Binance just announced a new listing! Get ready for the next big pump!",
+      "translated_text": "Binance baru sahaja mengumumkan penyenaraian baharu! Bersedia untuk kenaikan besar yang seterusnya!",
+      "mentioned_exchanges": [
+        "binance"
+      ],
+      "date": "2025-03-18 15:40:02.345678"
+    },
+    {
+      "id": 20346,
+      "original_text": "KuCoin volume surges after the latest market correction.",
+      "translated_text": "Volum KuCoin melonjak selepas pembetulan pasaran terbaru.",
+      "mentioned_exchanges": [
+        "kucoin"
+      ],
+      "date": "2025-03-18 15:41:00.678912"
+    },
+    {
+      "id": 20347,
+      "original_text": "Another interesting signal: watch out for activity on Bybit and Gate.io.",
+      "translated_text": "Satu lagi isyarat menarik: perhatikan aktiviti di Bybit dan Gate.io.",
+      "mentioned_exchanges": [
+        "bybit",
+        "gate.io"
+      ],
+      "date": "2025-03-18 15:41:45.123456"
+    },
+    {
+      "id": 20348,
+      "original_text": "The market seems quiet today, no major moves detected.",
+      "translated_text": "Pasaran kelihatan tenang hari ini, tiada pergerakan besar dikesan.",
+      "mentioned_exchanges": [],
+      "date": "2025-03-18 15:42:05.789123"
+    }
+  ]
+}
