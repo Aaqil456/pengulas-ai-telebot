@@ -2,7 +2,7 @@ import os
 import asyncio
 from utils.google_sheet_reader import fetch_channels_from_google_sheet
 from utils.telegram_reader import extract_channel_username, fetch_latest_messages
-from utils.ai_translator import init_gemini, translate_and_reword
+from utils.ai_translator import translate_text_gemini
 from utils.telegram_poster import send_to_telegram_channel
 from utils.json_writer import save_results
 
@@ -23,7 +23,7 @@ async def main():
         messages = await fetch_latest_messages(telegram_api_id, telegram_api_hash, channel_username)
 
         for msg in messages:
-            translated_text = translate_and_reword(gemini_model, msg["text"])
+            translated_text = translate_text_gemini(msg["text"])
             final_message = f"🚀 {translated_text}\n\n👉 Beli di *{entry['exchange_name']}* sini: {entry['referral_link']}"
 
             send_to_telegram_channel(final_message)
