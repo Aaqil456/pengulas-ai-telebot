@@ -1,13 +1,16 @@
-name: Exchange Info AI Agent Auto Run
+name: Run Telegram Translation Agent and Post to Telegram
 
 on:
+  workflow_dispatch:  # Manual run from Actions tab
   #schedule:
-    #- cron: '0 * * * *'  # every hour
-  workflow_dispatch:
+    #- cron: "0 * * * *"  # Uncomment to run every hour
+
+permissions:
+  contents: write
 
 jobs:
-  run:
-    runs-on: ubuntu-latest
+  run_script:
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout repository
@@ -16,13 +19,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.11'
+          python-version: 3.11
 
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
 
-      - name: Run AI Agent
+      - name: Verify Secrets
         env:
           TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
@@ -31,4 +34,33 @@ jobs:
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           GOOGLE_SHEET_API_KEY: ${{ secrets.GOOGLE_SHEET_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python exchange_info_ai_agent.py
+        run: |
+          if [ -z "${TELEGRAM_API_ID}" ] || [ -z "${TELEGRAM_API_HASH}" ] || [ -z "${TELEGRAM_BOT_TOKEN}" ] || [ -z "${TELEGRAM_CHAT_ID}" ] || [ -z "${GOOGLE_SHEET_ID}" ] || [ -z "${GOOGLE_SHEET_API_KEY}" ] || [ -z "${GEMINI_API_KEY}" ]; then
+            echo "❌ One or more required secrets are missing!"
+            exit 1
+          fi
+
+      - name: Run Telegram AI Agent
+        env:
+          TELEGRAM_API_ID: ${{ secrets.TELEGRAM_API_ID }}
+          TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SHEET_API_KEY: ${{ secrets.GOOGLE_SHEET_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python exchange_info_ai_agent.py
+          echo "[DEBUG] Contents of results.json:"
+          cat results.json || echo "[WARNING] results.json not found or empty"
+
+      - name: Commit and push updated results.json
+        env:
+          ACTIONS_PAT: ${{ secrets.ACTIONS_PAT }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add results.json
+          git status
+          git diff --cached --quiet || git commit -m "Update results.json"
+          git push https://x-access-token:${{ secrets.ACTIONS_PAT }}@github.com/${{ github.repository }}.git main
