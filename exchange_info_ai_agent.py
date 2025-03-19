@@ -1,45 +1,43 @@
 import os
-import json
-import base64
 import asyncio
-from utils.telegram_reader import fetch_latest_messages
-from utils.gemini_reworder import init_gemini, reword_and_translate
-from utils.google_sheets_reader import load_exchange_names
+from utils.google_sheet_reader import fetch_channels_from_google_sheet
+from utils.telegram_reader import extract_channel_username, fetch_latest_messages
+from utils.ai_translator import init_gemini, translate_and_reword
+from utils.telegram_poster import send_to_telegram_channel
 from utils.json_writer import save_results
 
-# Decode Google credentials from base64 secret & save as JSON
-def setup_google_credentials():
-    b64_creds = os.environ['GOOGLE_CREDENTIALS_JSON_B64']
-    with open('google_credentials.json', 'wb') as f:
-        f.write(base64.b64decode(b64_creds))
-
 async def main():
-    setup_google_credentials()
-
     telegram_api_id = os.environ['TELEGRAM_API_ID']
     telegram_api_hash = os.environ['TELEGRAM_API_HASH']
-    source_channel = os.environ['SOURCE_CHANNEL_USERNAME']
     gemini_api_key = os.environ['GEMINI_API_KEY']
-    google_sheet_url = os.environ['GOOGLE_SHEET_URL']
-
-    messages = await fetch_latest_messages(telegram_api_id, telegram_api_hash, source_channel)
+    sheet_id = os.environ['GOOGLE_SHEET_ID']
+    google_sheet_api_key = os.environ['GOOGLE_SHEET_API_KEY']
 
     gemini_model = init_gemini(gemini_api_key)
-    exchanges = load_exchange_names('google_credentials.json', google_sheet_url)
+    channels_data = fetch_channels_from_google_sheet(sheet_id, google_sheet_api_key)
 
-    results = []
-    for msg in messages:
-        translated_text = reword_and_translate(gemini_model, msg["text"])
-        mentioned_exchanges = [ex for ex in exchanges if ex.lower() in msg["text"].lower()]
-        results.append({
-            "id": msg["id"],
-            "original_text": msg["text"],
-            "translated_text": translated_text,
-            "mentioned_exchanges": mentioned_exchanges,
-            "date": msg["date"]
-        })
+    result_output = []
 
-    save_results(results)
+    for entry in channels_data:
+        channel_username = extract_channel_username(entry["channel_link"])
+        messages = await fetch_latest_messages(telegram_api_id, telegram_api_hash, channel_username)
+
+        for msg in messages:
+            translated_text = translate_and_reword(gemini_model, msg["text"])
+            final_message = f"🚀 {translated_text}\n\n👉 Beli di *{entry['exchange_name']}* sini: {entry['referral_link']}"
+
+            send_to_telegram_channel(final_message)
+
+            result_output.append({
+                "exchange_name": entry["exchange_name"],
+                "channel_link": entry["channel_link"],
+                "original_text": msg["text"],
+                "translated_text": translated_text,
+                "referral_link": entry["referral_link"],
+                "date": msg["date"]
+            })
+
+    save_results(result_output)
 
 if __name__ == "__main__":
     asyncio.run(main())
