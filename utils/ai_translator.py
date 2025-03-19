@@ -14,7 +14,7 @@ def translate_text_gemini(text):
             {
                 "parts": [
                     {
-                        "text": f"Translate this text '{text}' into Malay. Only return the translated text, structured like an article. Please exclude or don't take any sentences that looks like an advertisement from the text."
+                        "text": f"Translate this text '{text}' into Malay. Only return the translated text."
                     }
                 ]
             }
