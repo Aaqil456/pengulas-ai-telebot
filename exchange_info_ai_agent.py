@@ -4,18 +4,16 @@ from utils.google_sheet_reader import fetch_channels_from_google_sheet
 from utils.telegram_reader import extract_channel_username, fetch_latest_messages
 from utils.ai_translator import translate_text_gemini
 from utils.telegram_poster import send_to_telegram_channel
-from utils.json_writer import save_results
+from utils.json_writer import save_results, load_posted_messages
 
 async def main():
     telegram_api_id = os.environ['TELEGRAM_API_ID']
     telegram_api_hash = os.environ['TELEGRAM_API_HASH']
-    gemini_api_key = os.environ['GEMINI_API_KEY']
     sheet_id = os.environ['GOOGLE_SHEET_ID']
     google_sheet_api_key = os.environ['GOOGLE_SHEET_API_KEY']
 
-    gemini_model = init_gemini(gemini_api_key)
+    posted_messages = load_posted_messages()
     channels_data = fetch_channels_from_google_sheet(sheet_id, google_sheet_api_key)
-
     result_output = []
 
     for entry in channels_data:
@@ -23,6 +21,10 @@ async def main():
         messages = await fetch_latest_messages(telegram_api_id, telegram_api_hash, channel_username)
 
         for msg in messages:
+            if msg["text"] in posted_messages:
+                print(f"⚠️ Skipping duplicate message ID {msg['id']} from {channel_username}")
+                continue
+
             translated_text = translate_text_gemini(msg["text"])
             final_message = f"🚀 {translated_text}\n\n👉 Beli di *{entry['exchange_name']}* sini: {entry['referral_link']}"
 
@@ -37,7 +39,8 @@ async def main():
                 "date": msg["date"]
             })
 
-    save_results(result_output)
+    if result_output:
+        save_results(result_output)
 
 if __name__ == "__main__":
     asyncio.run(main())
