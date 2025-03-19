@@ -13,4 +13,3 @@ def send_to_telegram_channel(message):
         print("✅ Message sent to Telegram channel.")
     else:
         print(f"❌ Telegram send error: {response.text}")
-
