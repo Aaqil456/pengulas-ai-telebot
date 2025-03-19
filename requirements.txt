@@ -1,6 +1,4 @@
 telethon
-google-auth
 google-generativeai
-gspread
-oauth2client
+requests
 aiohttp
