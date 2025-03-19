@@ -1,10 +1,17 @@
+import sys
 import os
-import asyncio
+
+# Add project root to sys.path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from utils.google_sheet_reader import fetch_channels_from_google_sheet
 from utils.telegram_reader import extract_channel_username, fetch_latest_messages
 from utils.ai_translator import translate_text_gemini
 from utils.telegram_poster import send_to_telegram_channel
 from utils.json_writer import save_results, load_posted_messages
+
+import asyncio
+
 
 async def main():
     telegram_api_id = os.environ['TELEGRAM_API_ID']
