@@ -1,5 +1,6 @@
 import requests
 import os
+import time
 
 GEMINI_API_KEY = os.environ['GEMINI_API_KEY']
 
@@ -7,26 +8,30 @@ def translate_text_gemini(text):
     if not text or not isinstance(text, str) or not text.strip():
         return "Translation failed"
 
-    gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
-    headers = {"Content-Type": "application/json"}
-    payload = {
-        "contents": [
-            {
-                "parts": [
-                    {
-                        "text": f"Translate this text '{text}' into Malay. Only return the translated text."
-                    }
+    retries = 3
+    for attempt in range(retries):
+        try:
+            gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+            headers = {"Content-Type": "application/json"}
+            payload = {
+                "contents": [
+                    {"parts": [
+                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text."}
+                    ]}
                 ]
             }
-        ]
-    }
+            response = requests.post(gemini_url, headers=headers, json=payload)
+            response.raise_for_status()
 
-    try:
-        response = requests.post(gemini_url, json=payload, headers=headers)
-        response.raise_for_status()
-        gemini_response = response.json()
-        translated_text = gemini_response.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text")
-        return translated_text.strip() if translated_text else "Translation failed"
-    except Exception as e:
-        print(f"Gemini API error: {e}")
-        return "Translation failed"
+            data = response.json()
+            translated_text = data["candidates"][0]["content"]["parts"][0]["text"]
+
+            if translated_text.strip():
+                return translated_text.strip()
+            else:
+                print(f"[Warning] Empty translation result for: {text}")
+        except Exception as e:
+            print(f"[Error] Translation attempt {attempt+1} failed: {e}")
+            time.sleep(2)  # wait before retry
+
+    return "Translation failed"
