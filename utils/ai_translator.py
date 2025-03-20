@@ -34,4 +34,4 @@ def translate_text_gemini(text):
             print(f"[Error] Translation attempt {attempt+1} failed: {e}")
             time.sleep(2)  # wait before retry
 
-    return "Translation failed"
+    return "Belum ada akaun exchange kripto ?"
