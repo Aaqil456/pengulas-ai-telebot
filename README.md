@@ -76,9 +76,9 @@ Go to **GitHub > Settings > Secrets > Actions** and add these secrets:
 ### 4️⃣ Google Sheet Structure Example
 | Name    | Category | Link                                                    | TelegramChannelLink                      |
 |---------|----------|---------------------------------------------------------|------------------------------------------|
-| Bybit   | CEX      | https://partner.bybitglobal.com/b/bicarakrypto          | https://t.me/Bybit_Official             |
-| MEXC    | CEX      | https://www.mexc.co/register?inviteCode=mexc-bicarak   | https://t.me/MEXCofficialNews           |
-| Binance | CEX      | https://www.binance.info/activity/referral-entry/CPA...| https://t.me/binance_announcements      |
+| Bybit   | CEX      | your-referral-link-here                                 | telegram-channel-link-here               |
+| MEXC    | CEX      | your-referral-link-here                                 | telegram-channel-link-here               |
+| Binance | CEX      | your-referral-link-here                                 | telegram-channel-link-here               |
 
 ---
 
@@ -112,7 +112,7 @@ Go to **GitHub > Settings > Secrets > Actions** and add these secrets:
 ---
 
 ## ✅ Credits
-Built by: [Your Name]
+Built by: Aaqil Ahamad
 
 ---
 
