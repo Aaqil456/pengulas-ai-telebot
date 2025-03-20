@@ -33,7 +33,7 @@ async def main():
                 continue
 
             translated_text = translate_text_gemini(msg["text"])
-            final_message = f"🚀 {translated_text}\n\n👉 Beli di *{entry['exchange_name']}* sini: {entry['referral_link']}"
+            final_message = f"🚀 {translated_text}\n\n👉 Daftar *{entry['exchange_name']}* : {entry['referral_link']}"
 
             send_to_telegram_channel(final_message)
 
