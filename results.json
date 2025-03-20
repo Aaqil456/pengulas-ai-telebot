@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-03-20T14:53:18.018567",
+    "timestamp": "2025-03-20T15:17:52.872678",
     "messages": [
         {
             "id": 20345,
@@ -691,6 +691,14 @@
             "translated_text": "\ud83d\udce2 Notis Penyenaraian Futures BingX\n\n\ud83d\udce2 $BR tersenarai di #BingX!\n\n\ud83d\uddd3 BingX Futures Kekal Senaraikan BR/USDT\n\nKlik \ud83d\udc47\n\n[DAGANG BR/USDT](https://bingx.com/perpetual/BR-USDT?ch=community)",
             "referral_link": "https://bingx.com/invite/XX44WJ",
             "date": "2025-03-20 14:51:31+00:00"
+        },
+        {
+            "exchange_name": "Blofin",
+            "channel_link": "https://t.me/Blofin_Announcements",
+            "original_text": "[Notice on the Upgrade of Deposit Address on SOLANA Network Wallet](https://support.blofin.com/hc/en-us/articles/12222838765967)\n\nTo provide users with a better trading experience, BloFin is scheduled to upgrade the wallet for the SOLANA network on April 02, 2025. After this upgrade, the deposit addresses for Solana (SOL) tokens and other tokens on the SOLANA network will be updated. Please note that your assets on BloFin will not be affected by this upgrade.\n\nPLEASE NOTE\n1. After the upgrade on April 02, 2025, please make sure to use the new deposit address on the deposit page before making a deposit, and DO NOT deposit your assets to the old address.\n2. There will be a transition period before April 02, 2025, during which deposits sent to the old address will still be automatically credited to your account.\n3. After the transition period, the old deposit address will no longer be available, and any deposits sent to the old address will no longer be credited.\n\nFurther details: https://support.blofin.com/hc/en-us/articles/12222838765967",
+            "translated_text": "[Notis Mengenai Peningkatan Alamat Deposit pada Dompet Rangkaian SOLANA](https://support.blofin.com/hc/en-us/articles/12222838765967)\n\nUntuk memberikan pengalaman perdagangan yang lebih baik kepada pengguna, BloFin dijadualkan untuk meningkatkan dompet untuk rangkaian SOLANA pada 2 April 2025. Selepas peningkatan ini, alamat deposit untuk token Solana (SOL) dan token lain pada rangkaian SOLANA akan dikemas kini. Harap maklum bahawa aset anda di BloFin tidak akan terjejas oleh peningkatan ini.\n\nSILA AMBIL PERHATIAN\n1. Selepas peningkatan pada 2 April 2025, sila pastikan untuk menggunakan alamat deposit baharu di halaman deposit sebelum membuat deposit, dan JANGAN mendeposit aset anda ke alamat lama.\n2. Akan terdapat tempoh peralihan sebelum 2 April 2025, di mana deposit yang dihantar ke alamat lama masih akan dikreditkan secara automatik ke akaun anda.\n3. Selepas tempoh peralihan, alamat deposit lama tidak lagi akan tersedia, dan sebarang deposit yang dihantar ke alamat lama tidak lagi akan dikreditkan.\n\nMaklumat lanjut: https://support.blofin.com/hc/en-us/articles/12222838765967",
+            "referral_link": "https://blofin.com/register?referral_code=Q323Gq",
+            "date": "2025-03-20 15:17:29+00:00"
         }
     ]
 }
