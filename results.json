@@ -1,40 +1,96 @@
 {
-  "timestamp": "2025-03-18T15:42:10.123456",
-  "messages": [
-    {
-      "id": 20345,
-      "original_text": "Binance just announced a new listing! Get ready for the next big pump!",
-      "translated_text": "Binance baru sahaja mengumumkan penyenaraian baharu! Bersedia untuk kenaikan besar yang seterusnya!",
-      "mentioned_exchanges": [
-        "binance"
-      ],
-      "date": "2025-03-18 15:40:02.345678"
-    },
-    {
-      "id": 20346,
-      "original_text": "KuCoin volume surges after the latest market correction.",
-      "translated_text": "Volum KuCoin melonjak selepas pembetulan pasaran terbaru.",
-      "mentioned_exchanges": [
-        "kucoin"
-      ],
-      "date": "2025-03-18 15:41:00.678912"
-    },
-    {
-      "id": 20347,
-      "original_text": "Another interesting signal: watch out for activity on Bybit and Gate.io.",
-      "translated_text": "Satu lagi isyarat menarik: perhatikan aktiviti di Bybit dan Gate.io.",
-      "mentioned_exchanges": [
-        "bybit",
-        "gate.io"
-      ],
-      "date": "2025-03-18 15:41:45.123456"
-    },
-    {
-      "id": 20348,
-      "original_text": "The market seems quiet today, no major moves detected.",
-      "translated_text": "Pasaran kelihatan tenang hari ini, tiada pergerakan besar dikesan.",
-      "mentioned_exchanges": [],
-      "date": "2025-03-18 15:42:05.789123"
-    }
-  ]
+    "timestamp": "2025-03-20T06:08:21.324784",
+    "messages": [
+        {
+            "id": 20345,
+            "original_text": "Binance just announced a new listing! Get ready for the next big pump!",
+            "translated_text": "Binance baru sahaja mengumumkan penyenaraian baharu! Bersedia untuk kenaikan besar yang seterusnya!",
+            "mentioned_exchanges": [
+                "binance"
+            ],
+            "date": "2025-03-18 15:40:02.345678"
+        },
+        {
+            "id": 20346,
+            "original_text": "KuCoin volume surges after the latest market correction.",
+            "translated_text": "Volum KuCoin melonjak selepas pembetulan pasaran terbaru.",
+            "mentioned_exchanges": [
+                "kucoin"
+            ],
+            "date": "2025-03-18 15:41:00.678912"
+        },
+        {
+            "id": 20347,
+            "original_text": "Another interesting signal: watch out for activity on Bybit and Gate.io.",
+            "translated_text": "Satu lagi isyarat menarik: perhatikan aktiviti di Bybit dan Gate.io.",
+            "mentioned_exchanges": [
+                "bybit",
+                "gate.io"
+            ],
+            "date": "2025-03-18 15:41:45.123456"
+        },
+        {
+            "id": 20348,
+            "original_text": "The market seems quiet today, no major moves detected.",
+            "translated_text": "Pasaran kelihatan tenang hari ini, tiada pergerakan besar dikesan.",
+            "mentioned_exchanges": [],
+            "date": "2025-03-18 15:42:05.789123"
+        },
+        {
+            "exchange_name": "MEXC",
+            "channel_link": "https://t.me/MEXCofficialNews",
+            "original_text": "**\ud83d\ude80**** ****$RED** **trading is now live on ****#MEXC**** ****\ud83d\ude00****!**\n\n\ud83d\udc8e **RED/USDT**: https://www.mexc.com/exchange/RED_USDT?utm_source=community&utm_medium=tg\n\n\ud83d\udd25 **RedStone **is the fastest-growing Modular Oracle specialising in yield-bearing collateral for lending markets, like LSTs & LRTs. It offers gas-optimized data feeds across 50+ chains & all rollups. Trusted by Morpho, Venus & more.\n\nFind out more about** RedStone** in #MEXCCryptoGemcard.",
+            "translated_text": "**\ud83d\ude80 $RED dagangan kini secara langsung di #MEXC \ud83d\ude00!**\n\n\ud83d\udc8e **RED/USDT**: https://www.mexc.com/exchange/RED_USDT?utm_source=community&utm_medium=tg\n\n\ud83d\udd25 **RedStone** ialah Oracle Modular terpantas yang pesat berkembang, pakar dalam cagaran berpendapatan untuk pasaran pinjaman, seperti LST & LRT. Ia menawarkan suapan data dioptimumkan gas merentasi 50+ rantaian & semua penggulungan. Dipercayai oleh Morpho, Venus & banyak lagi.\n\nKetahui lebih lanjut tentang **RedStone** di #MEXCCryptoGemcard.",
+            "referral_link": "https://www.mexc.co/register?inviteCode=mexc-bicarak",
+            "date": "2025-03-20 05:53:40+00:00"
+        },
+        {
+            "exchange_name": "MEXC",
+            "channel_link": "https://t.me/MEXCofficialNews",
+            "original_text": "**\ud83d\ude00**** Top 5 Picks in the ALPHA Category! ****\ud83d\udcc8**\n\n\ud83d\ude80 #MEXC brings you the hottest **ALPHA** projects:\n\n\ud83e\udd47 [AIXBT/USDT](https://www.mexc.com/exchange/AIXBT_USDT?utm_source=community&utm_medium=tg)\n\ud83e\udd48 [BANANA/USDT](https://www.mexc.com/exchange/BANANA_USDT?utm_source=community&utm_medium=tg)\n\ud83e\udd49 [FARTCOIN/USDT](https://www.mexc.com/exchange/FARTCOIN_USDT?utm_source=community&utm_medium=tg)\n\ud83c\udfc5 [COOKIE/USDT](https://www.mexc.com/exchange/COOKIE_USDT?utm_source=community&utm_medium=tg)\n\ud83c\udfc5 [KOMA/USDT](https://www.mexc.com/exchange/KOMA_USDT?utm_source=community&utm_medium=tg)[\n](https://www.mexc.com/exchange/SD_USDT?_from=search_spot_trade)\n\ud83d\udd25 ALPHA projects are full of growth potential and ready for breakthroughs! Don\u2019t miss out on these exciting opportunities!\n\n\ud83d\udc8e** Start your journey today: ****https://www.mexc.com/markets?utm_source=community&utm_medium=tg**\n\n#MEXC #ALPHA #Trading",
+            "translated_text": "\ud83d\ude00 5 Pilihan Teratas dalam Kategori ALPHA! \ud83d\udcc8\n\n\ud83d\ude80 #MEXC membawakan anda projek ALPHA paling hangat:\n\n\ud83e\udd47 [AIXBT/USDT](https://www.mexc.com/exchange/AIXBT_USDT?utm_source=community&utm_medium=tg)\n\ud83e\udd48 [BANANA/USDT](https://www.mexc.com/exchange/BANANA_USDT?utm_source=community&utm_medium=tg)\n\ud83e\udd49 [FARTCOIN/USDT](https://www.mexc.com/exchange/FARTCOIN_USDT?utm_source=community&utm_medium=tg)\n\ud83c\udfc5 [COOKIE/USDT](https://www.mexc.com/exchange/COOKIE_USDT?utm_source=community&utm_medium=tg)\n\ud83c\udfc5 [KOMA/USDT](https://www.mexc.com/exchange/KOMA_USDT?utm_source=community&utm_medium=tg)\n\n\ud83d\udd25 Projek ALPHA penuh dengan potensi pertumbuhan dan bersedia untuk kejayaan! Jangan lepaskan peluang menarik ini!\n\n\ud83d\udc8e Mulakan perjalanan anda hari ini: https://www.mexc.com/markets?utm_source=community&utm_medium=tg\n\n#MEXC #ALPHA #Dagangan",
+            "referral_link": "https://www.mexc.co/register?inviteCode=mexc-bicarak",
+            "date": "2025-03-20 04:04:19+00:00"
+        },
+        {
+            "exchange_name": "MEXC",
+            "channel_link": "https://t.me/MEXCofficialNews",
+            "original_text": "Star Projects of #MEXC\u2019s 0 Trading Fee Fest (Mar 20, 2025)! \n\n\ud83c\udfc6 Top 5 Trading Pairs:\n$SOL, $DOGE, $ADA, $SUI, $PEPE\n\n\ud83c\udfc6 Top 3 Gainers:\n$SOL, $UNI,  $LINK\n\n[No trading fees, just pure gains!](https://www.mexc.com/zero-fee?utm_source=socialmedia&utm_medium=twitter&utm_campaign=zerofees)",
+            "translated_text": "Projek Bintang Perayaan Fi Tanpa Yuran Dagangan #MEXC (20 Mac 2025)!\n\n\ud83c\udfc6 5 Pasangan Dagangan Teratas:\n$SOL, $DOGE, $ADA, $SUI, $PEPE\n\n\ud83c\udfc6 3 Peningkat Teratas:\n$SOL, $UNI, $LINK\n\n[Tiada yuran dagangan, hanya keuntungan tulen!] (https://www.mexc.com/zero-fee?utm_source=socialmedia&utm_medium=twitter&utm_campaign=zerofees)",
+            "referral_link": "https://www.mexc.co/register?inviteCode=mexc-bicarak",
+            "date": "2025-03-20 02:54:00+00:00"
+        },
+        {
+            "exchange_name": "MEXC",
+            "channel_link": "https://t.me/MEXCofficialNews",
+            "original_text": "**\ud83c\udf1f**** Shine as a Profit Star with** **MEXC DEX+ **\n\n\ud83d\ude80** How to Participate:**\n\n1\ufe0f\u20e3 Trade on DEX+: https://promote.mexc.com/r/w7gxhYpm\n2\ufe0f\u20e3 Share your holdings screenshot in the comment area.\n3\ufe0f\u20e3 Fill out [**the form**](https://forms.gle/XgLLxi9W8JVDaokU9) to complete your entry.\n\n\ud83c\udf81 Prize Pool: **500 USDT **(20 lucky winners, 25 USDT each)\n\n\ud83c\udfc6 The bigger your profit, the higher your chances of winning!\n\n\u23f0 Event Duration: March 19th - March 23rd\n\n#DEXPlus #MEXC #ProfitStar",
+            "translated_text": "**\ud83c\udf1f Bersinar sebagai Bintang Keuntungan dengan MEXC DEX+**\n\n\ud83d\ude80 **Cara Menyertai:**\n\n1\ufe0f\u20e3 Berdagang di DEX+: https://promote.mexc.com/r/w7gxhYpm\n2\ufe0f\u20e3 Kongsikan tangkapan skrin pegangan anda di ruangan komen.\n3\ufe0f\u20e3 Isi [**borang**](https://forms.gle/XgLLxi9W8JVDaokU9) untuk melengkapkan penyertaan anda.\n\n\ud83c\udf81 Kumpulan Hadiah: **500 USDT** (20 pemenang bertuah, 25 USDT setiap seorang)\n\n\ud83c\udfc6 Semakin besar keuntungan anda, semakin tinggi peluang anda untuk menang!\n\n\u23f0 Tempoh Acara: 19 Mac - 23 Mac\n\n#DEXPlus #MEXC #ProfitStar",
+            "referral_link": "https://www.mexc.co/register?inviteCode=mexc-bicarak",
+            "date": "2025-03-19 13:08:19+00:00"
+        },
+        {
+            "exchange_name": "BingX",
+            "channel_link": "https://t.me/BingXAnnouncement",
+            "original_text": "**Lowlife Forms (****$SPICE****) AirDrop Event**\ud83c\udf89\n\n**150 winners will share 5-500U ****$SPICE**** ****#Airdrop**** each!\n**\n\ud83c\udf81 __Finish more tasks & more spot trades for higher ____#Giveaways____ chances!__\n\n\ud83d\uddd3**Event deadline**: March 26, 23:59 (UTC+8)\n\n__Hurry to participate in the Airdrop Event!__\n\n**Click** \ud83d\udc47\n[Event Link](https://gleam.io/nuuI2/bingx-x-spice-lowlife-forms-airdrop)",
+            "translated_text": "Acara AirDrop Lowlife Forms ($SPICE) \ud83c\udf89\n\n150 pemenang akan berkongsi 5-500U $SPICE #Airdrop setiap seorang!\n\n\ud83c\udf81 Selesaikan lebih banyak tugasan & urusniaga spot untuk peluang #Giveaway yang lebih tinggi!\n\n\ud83d\uddd3Tarikh akhir acara: 26 Mac, 23:59 (UTC+8)\n\nCepat sertai Acara Airdrop!\n\nKlik \ud83d\udc47\n[Pautan Acara](https://gleam.io/nuuI2/bingx-x-spice-lowlife-forms-airdrop)",
+            "referral_link": "https://bingx.com/invite/XX44WJ",
+            "date": "2025-03-20 00:11:34+00:00"
+        },
+        {
+            "exchange_name": "BingX",
+            "channel_link": "https://t.me/BingXAnnouncement",
+            "original_text": "\ud83d\udd25 **Tutorial (****$TUT****) AirDrop Bonanza**\n\n\ud83d\uddd3 __Mar 19th - Mar 21st (UTC)__\n\n\ud83c\udf81  __Complete the task to Share $1,000 in TUT!__\n\n\u2705 **Follow ** [@BingXOfficial](https://x.com/BingXOfficial) **& Join** @BingXAnnouncement\n\u2705 **Like, QT, and tag 3 friends\n\u2705 Make Any Net Deposit on BingX**\n\u2705 **leave your BingX UID** [HERE](https://docs.google.com/forms/d/e/1FAIpQLSd8s8rSbQ7Sont3pvK6qTz-Rexs3xl6FlsAZ1MG4unQ-493Kw/viewform)\n\n\ud83d\ude80 **More Deposits, Higher Winning Chance\u203c\ufe0f**",
+            "translated_text": "\ud83d\udd25 **Tutorial (****$TUT****) AirDrop Bonanza**\n\n\ud83d\uddd3 __19 Mac - 21 Mac (UTC)__\n\n\ud83c\udf81  __Selesaikan tugasan untuk berkongsi $1,000 dalam TUT!__\n\n\u2705 **Ikut ** [@BingXOfficial](https://x.com/BingXOfficial) **& Sertai** @BingXAnnouncement\n\u2705 **Suka, QT, dan tag 3 rakan**\n\u2705 **Buat Sebarang Deposit Bersih di BingX**\n\u2705 **Tinggalkan UID BingX anda** [DI SINI](https://docs.google.com/forms/d/e/1FAIpQLSd8s8rSbQ7Sont3pvK6qTz-Rexs3xl6FlsAZ1MG4unQ-493Kw/viewform)\n\n\ud83d\ude80 **Deposit Lebih Banyak, Peluang Menang Lebih Tinggi\u203c\ufe0f**",
+            "referral_link": "https://bingx.com/invite/XX44WJ",
+            "date": "2025-03-19 09:46:31+00:00"
+        },
+        {
+            "exchange_name": "BingX",
+            "channel_link": "https://t.me/BingXAnnouncement",
+            "original_text": "https://t.me/bingxcopytradeofficial/241",
+            "translated_text": "https://t.me/bingxcopytradeofficial/241",
+            "referral_link": "https://bingx.com/invite/XX44WJ",
+            "date": "2025-03-19 07:24:00+00:00"
+        }
+    ]
 }
