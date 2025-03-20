@@ -4,7 +4,7 @@ def extract_channel_username(url):
     return '@' + url.strip().rstrip('/').split('/')[-1]
 
 async def fetch_latest_messages(api_id, api_hash, channel_username, limit=5):
-    client = TelegramClient("session", api_id, api_hash)
+    client = TelegramClient("telegram_session", api_id, api_hash)
     await client.start()
     messages = []
 
