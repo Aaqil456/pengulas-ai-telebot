@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-03-21T09:42:02.460755",
+    "timestamp": "2025-03-21T09:47:36.692536",
     "messages": [
         {
             "id": 20345,
@@ -987,6 +987,14 @@
             "translated_text": "BloFin Akan Menyahsenaraikan AERGO untuk Dagangan Spot\n\nDagangan Spot: Semua dagangan dan pesanan belum selesai akan secara automatik dikeluarkan dan dibatalkan selepas dagangan AERGO tamat pada 02:00 (UTC) pada 27 Mac 2025. Pengguna dinasihatkan untuk mengemaskini atau membatalkan pesanan mereka sebelum penamatan perkhidmatan Dagangan Spot bagi mengelakkan sebarang potensi kerugian.\n\nDeposit: Kami akan menutup deposit untuk token AERGO pada 02:30 (UTC) pada 27 Mac 2025. Sila uruskan aset anda dengan segera.\n\nPengeluaran: Kami akan menutup pengeluaran untuk token AERGO pada 02:00 (UTC) pada 27 Mei 2025. Sila pastikan anda memberikan masa yang mencukupi untuk aset anda diproses sepenuhnya sebelum waktu ini.",
             "referral_link": "https://blofin.com/register?referral_code=Q323Gq",
             "date": "2025-03-21 09:32:59+00:00"
+        },
+        {
+            "exchange_name": "Blofin",
+            "channel_link": "https://t.me/Blofin_Announcements",
+            "original_text": "24H Fee Discount Event: Trade ORCAUSDT to Enjoy 0% Maker Fees & 50% off Taker Fees.\n\n\u23f0 10:00 UTC on Mar 21 to 10:00 UTC on Mar 22",
+            "translated_text": "Diskaun Yuran 24 Jam: Dagang ORCAUSDT untuk menikmati Yuran Pembuat 0% & 50% diskaun Yuran Pengambil.  \u23f0 10:00 UTC pada 21 Mac hingga 10:00 UTC pada 22 Mac",
+            "referral_link": "https://blofin.com/register?referral_code=Q323Gq",
+            "date": "2025-03-21 09:45:07+00:00"
         }
     ]
 }
