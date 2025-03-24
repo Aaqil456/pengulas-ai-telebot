@@ -16,7 +16,7 @@ def translate_text_gemini(text):
             payload = {
                 "contents": [
                     {"parts": [
-                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text."}
+                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text. the translation should have the tone of natural kolokial malay malaysian. "}
                     ]}
                 ]
             }
