@@ -2,10 +2,11 @@ import requests
 import os
 import time
 
-GEMINI_API_KEY = os.environ['GEMINI_API_KEY']
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 def translate_text_gemini(text):
     if not text or not isinstance(text, str) or not text.strip():
+        print(f"[Warning] Empty or invalid text received for translation: {text}")
         return "Translation failed"
 
     retries = 3
@@ -16,10 +17,19 @@ def translate_text_gemini(text):
             payload = {
                 "contents": [
                     {"parts": [
-                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text without any explanation. Use natural, conversational, friendly Malaysian Malay — like how a friend shares info. Keep it simple, relaxed, and easy to understand. Avoid using exaggerated slang words or interjections (such as "Eh," "Korang," "Woi," "Wooohooo," "Wooo," or anything similar). No shouting words or unnecessary excitement. Keep it informative, approachable, and casual — but clean and neutral. Do not use emojis unless they appear in the original text. Do not translate brand names or product names."}
+                        {"text": f"""Translate this text: '{text}' into Malay. 
+Only return the translated text without any explanation. 
+Use natural, conversational, friendly Malaysian Malay — like how a friend shares info. 
+Keep it simple, relaxed, and easy to understand. 
+Avoid using exaggerated slang words or interjections (such as "Eh," "Korang," "Woi," "Wooohooo," "Wooo," or anything similar). 
+No shouting words or unnecessary excitement. 
+Keep it informative, approachable, and casual — but clean and neutral. 
+Do not use emojis unless they appear in the original text. 
+Do not translate brand names or product names."""}
                     ]}
                 ]
             }
+
             response = requests.post(gemini_url, headers=headers, json=payload)
             response.raise_for_status()
 
@@ -27,11 +37,13 @@ def translate_text_gemini(text):
             translated_text = data["candidates"][0]["content"]["parts"][0]["text"]
 
             if translated_text.strip():
+                print(f"[Success] Translation completed for: {text[:60]}...")
                 return translated_text.strip()
             else:
-                print(f"[Warning] Empty translation result for: {text}")
+                print(f"[Warning] Gemini returned empty translation on attempt {attempt+1}. Retrying...")
         except Exception as e:
-            print(f"[Error] Translation attempt {attempt+1} failed: {e}")
-            time.sleep(2)  # wait before retry
+            print(f"[Error] Attempt {attempt+1} - Translation failed: {e}")
+            time.sleep(2)
 
-    return "Belum ada akaun exchange kripto ?"
+    print(f"[Error] All attempts failed to translate: {text[:60]}...")
+    return "Translation failed"
