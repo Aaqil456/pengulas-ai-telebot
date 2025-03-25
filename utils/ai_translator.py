@@ -16,7 +16,7 @@ def translate_text_gemini(text):
             payload = {
                 "contents": [
                     {"parts": [
-                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text. the translation should have the tone of natural kolokial malay malaysian. Make it conversational, simple, friendly, like how a friend shares info — but no over-the-top slang or yelling words."}
+                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text. the translation should have the tone of natural kolokial malay malaysian. Make it conversational, simple, friendly, like how a friend shares info — but no over-the-top slang or yelling words like Woi and Wooohooo."}
                     ]}
                 ]
             }
