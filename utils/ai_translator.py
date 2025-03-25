@@ -16,7 +16,7 @@ def translate_text_gemini(text):
             payload = {
                 "contents": [
                     {"parts": [
-                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text. the translation should have the tone of natural kolokial malay malaysian. Make it conversational, simple, friendly, like how a friend shares info — but no over-the-top slang or yelling words like Woi and Wooohooo."}
+                        {"text": f"Translate this text '{text}' into Malay. Only return the translated text without any explanation. Use natural, conversational, friendly Malaysian Malay — like how a friend shares info. Keep it simple, relaxed, and easy to understand. Avoid using exaggerated slang words or interjections (such as "Eh," "Korang," "Woi," "Wooohooo," "Wooo," or anything similar). No shouting words or unnecessary excitement. Keep it informative, approachable, and casual — but clean and neutral. Do not use emojis unless they appear in the original text. Do not translate brand names or product names."}
                     ]}
                 ]
             }
