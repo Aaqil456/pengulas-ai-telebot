@@ -7,11 +7,10 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from utils.google_sheet_reader import fetch_channels_from_google_sheet
 from utils.telegram_reader import extract_channel_username, fetch_latest_messages
 from utils.ai_translator import translate_text_gemini
-from utils.telegram_poster import send_to_telegram_channel
+from utils.telegram_sender import send_telegram_message_html
 from utils.json_writer import save_results, load_posted_messages
 
 import asyncio
-
 
 async def main():
     telegram_api_id = os.environ['TELEGRAM_API_ID']
@@ -33,9 +32,12 @@ async def main():
                 continue
 
             translated_text = translate_text_gemini(msg["text"])
-            final_message = f"🚀 {translated_text}\n\n👉 Daftar *{entry['exchange_name']}* : {entry['referral_link']}"
 
-            send_to_telegram_channel(final_message)
+            send_telegram_message_html(
+                translated_text=translated_text,
+                exchange_name=entry["exchange_name"],
+                referral_link=entry["referral_link"]
+            )
 
             result_output.append({
                 "exchange_name": entry["exchange_name"],
