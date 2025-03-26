@@ -16,7 +16,8 @@ def send_telegram_message_html(translated_text, exchange_name=None, referral_lin
         message_html += f"{safe_text}"
 
     if referral_link:
-        message_html += f"\n\n👉 <a href='{referral_link}'>Register & Trade here</a>"
+        message_html += f"\n\n👉 <a href=\"{referral_link}\">Daftar di {exchange_name}</a>"
+
 
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
