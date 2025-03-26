@@ -11,7 +11,7 @@ def send_telegram_message_html(translated_text, exchange_name=None, referral_lin
 
     message_html = ""
     if exchange_name:
-        message_html += f"<b>{exchange_name}</b> just posted an update:\n\n{safe_text}"
+        message_html += f"{safe_text}"
     else:
         message_html += f"{safe_text}"
 
