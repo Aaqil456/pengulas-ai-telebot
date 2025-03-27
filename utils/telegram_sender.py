@@ -29,12 +29,18 @@ def send_telegram_message_html(translated_text, exchange_name=None, referral_lin
     except Exception as e:
         print(f"❌ Telegram send exception: {e}")
 
-def send_photo_to_telegram_channel(image_path, translated_caption):
+def send_photo_to_telegram_channel(image_path, translated_caption, exchange_name=None, referral_link=None):
+    # Build full caption
+    safe_caption = html.escape(translated_caption)
+
+    if referral_link:
+        safe_caption += f"\n\n👉 <a href=\"{referral_link}\">Daftar di {exchange_name}</a>"
+
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
     with open(image_path, "rb") as photo_file:
         payload = {
             "chat_id": TELEGRAM_CHAT_ID,
-            "caption": html.escape(translated_caption),
+            "caption": safe_caption,
             "parse_mode": "HTML"
         }
         files = {"photo": photo_file}
