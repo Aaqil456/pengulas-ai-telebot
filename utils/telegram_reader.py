@@ -5,6 +5,10 @@ import os
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
+def extract_channel_username(url):
+    return '@' + url.strip().rstrip('/').split('/')[-1]
+
+
 def send_telegram_message_html(translated_text, exchange_name=None, referral_link=None):
     safe_text = html.escape(translated_text)
 
