@@ -14,7 +14,6 @@ from utils.json_writer import save_results, load_posted_messages
 
 
 async def main():
-    # Load secrets from GitHub Actions environment
     telegram_api_id = os.environ['TELEGRAM_API_ID']
     telegram_api_hash = os.environ['TELEGRAM_API_HASH']
     sheet_id = os.environ['GOOGLE_SHEET_ID']
@@ -23,7 +22,6 @@ async def main():
     posted_messages = load_posted_messages()
     result_output = []
 
-    # Fetch exchange name, referral link & channel URL from Google Sheet
     channels_data = fetch_channels_from_google_sheet(sheet_id, google_sheet_api_key)
 
     for entry in channels_data:
@@ -44,7 +42,6 @@ async def main():
 
                 send_photo_to_telegram_channel(image_path, translated)
                 os.remove(image_path)
-
             else:
                 send_telegram_message_html(
                     translated_text=translated,
@@ -52,7 +49,6 @@ async def main():
                     referral_link=entry["referral_link"]
                 )
 
-            # Save results
             result_output.append({
                 "exchange_name": entry["exchange_name"],
                 "channel_link": entry["channel_link"],
