@@ -7,7 +7,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 def translate_text_gemini(text):
     if not text or not isinstance(text, str) or not text.strip():
         print(f"[Warning] Empty or invalid text received for translation: {text}")
-        return "Translation failed"
+        return ""
 
     retries = 3
     for attempt in range(retries):
