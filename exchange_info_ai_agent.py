@@ -1,26 +1,30 @@
 import sys
 import os
+import asyncio
 
-# Add project root to sys.path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from telethon import TelegramClient
 
 from utils.google_sheet_reader import fetch_channels_from_google_sheet
 from utils.telegram_reader import extract_channel_username, fetch_latest_messages
 from utils.ai_translator import translate_text_gemini
-from utils.telegram_sender import send_telegram_message_html
+from utils.telegram_sender import send_telegram_message_html, send_photo_to_telegram_channel
 from utils.json_writer import save_results, load_posted_messages
 
-import asyncio
 
 async def main():
+    # Load secrets from GitHub Actions environment
     telegram_api_id = os.environ['TELEGRAM_API_ID']
     telegram_api_hash = os.environ['TELEGRAM_API_HASH']
     sheet_id = os.environ['GOOGLE_SHEET_ID']
     google_sheet_api_key = os.environ['GOOGLE_SHEET_API_KEY']
 
     posted_messages = load_posted_messages()
-    channels_data = fetch_channels_from_google_sheet(sheet_id, google_sheet_api_key)
     result_output = []
+
+    # Fetch exchange name, referral link & channel URL from Google Sheet
+    channels_data = fetch_channels_from_google_sheet(sheet_id, google_sheet_api_key)
 
     for entry in channels_data:
         channel_username = extract_channel_username(entry["channel_link"])
@@ -31,25 +35,36 @@ async def main():
                 print(f"⚠️ Skipping duplicate message ID {msg['id']} from {channel_username}")
                 continue
 
-            translated_text = translate_text_gemini(msg["text"])
+            translated = translate_text_gemini(msg["text"])
 
-            send_telegram_message_html(
-                translated_text=translated_text,
-                exchange_name=entry["exchange_name"],
-                referral_link=entry["referral_link"]
-            )
+            if msg["has_photo"]:
+                image_path = f"photo_{msg['id']}.jpg"
+                async with TelegramClient("telegram_session", telegram_api_id, telegram_api_hash) as client:
+                    await client.download_media(msg["raw"], image_path)
 
+                send_photo_to_telegram_channel(image_path, translated)
+                os.remove(image_path)
+
+            else:
+                send_telegram_message_html(
+                    translated_text=translated,
+                    exchange_name=entry["exchange_name"],
+                    referral_link=entry["referral_link"]
+                )
+
+            # Save results
             result_output.append({
                 "exchange_name": entry["exchange_name"],
                 "channel_link": entry["channel_link"],
                 "original_text": msg["text"],
-                "translated_text": translated_text,
+                "translated_text": translated,
                 "referral_link": entry["referral_link"],
                 "date": msg["date"]
             })
 
     if result_output:
         save_results(result_output)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
