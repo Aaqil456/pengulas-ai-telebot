@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-03-27T10:39:45.701509",
+    "timestamp": "2025-03-27T10:50:36.327149",
     "messages": [
         {
             "id": 20345,
@@ -3267,6 +3267,22 @@
             "translated_text": "\ud83d\udd25Staking Awal Launchpool Gate.io Dah Mula! Stake Awal, Untung Tanpa Risau! (https://www.gate.io/post/status/9964214)\n\n\u23f0 Tak perlu tunggu lagi! Mula stake $WAL & $ZULU sekarang, dapat ganjaran setiap jam secara automatik bila perlombongan bermula!\n\n\u25b6\ufe0f Dapat $WAL Sekarang: https://www.gate.io/launchpool/WAL?pid=246\n\u25b6\ufe0f Dapat $ZULU Sekarang: https://www.gate.io/launchpool/ZULU?pid=248",
             "referral_link": "https://www.gate.io/signup/BgASAV5W?ref_type=103",
             "date": "2025-03-27 10:34:05+00:00"
+        },
+        {
+            "exchange_name": "Bybit",
+            "channel_link": "https://t.me/Bybit_Announcements",
+            "original_text": "**\ud83d\udce2 New Listing: **[**WALUSDT**](https://x.com/walrusprotocol)[ ](https://i.bybit.com/ab1LaMF5)**Perpetual Contract**",
+            "translated_text": "\ud83d\udce2 Senarai Terbaru: WALUSDT (Perpetual Contract)",
+            "referral_link": "https://signup-bicarakripto.taplink.ws/",
+            "date": "2025-03-27 10:45:00+00:00"
+        },
+        {
+            "exchange_name": "MEXC",
+            "channel_link": "https://t.me/MEXCofficialNews",
+            "original_text": "#MEXC expands DEX+ with #BSC integration! \ud83d\udd25\n\nUsers can now trade 15,000+ tokens ( $BNB, $CAKE, $AVA & more) seamlessly\u2014no web external wallets wallets, no manual signatures. \n\nRead the full report: https://www.cryptopolitan.com/mexc-adds-support-for-binance-smart-chain-on-its-dex-platform/",
+            "translated_text": "MEXC tambah baik DEX+ dengan integrasi #BSC! \ud83d\udd25\n\nSekarang pengguna boleh tukar lebih 15,000 token ($BNB, $CAKE, $AVA dan banyak lagi) dengan mudah \u2014 tak perlu dompet luar, tak perlu tandatangan manual.\n\nBaca laporan penuh: https://www.cryptopolitan.com/mexc-adds-support-for-binance-smart-chain-on-its-dex-platform/",
+            "referral_link": "https://www.mexc.co/register?inviteCode=mexc-bicarak",
+            "date": "2025-03-27 10:39:34+00:00"
         }
     ]
 }
