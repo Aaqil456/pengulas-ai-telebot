@@ -40,7 +40,13 @@ async def main():
                 async with TelegramClient("telegram_session", telegram_api_id, telegram_api_hash) as client:
                     await client.download_media(msg["raw"], image_path)
 
-                send_photo_to_telegram_channel(image_path, translated)
+                send_photo_to_telegram_channel(
+                    image_path,
+                    translated,
+                    exchange_name=entry["exchange_name"],
+                    referral_link=entry["referral_link"]
+                )
+
                 os.remove(image_path)
             else:
                 send_telegram_message_html(
