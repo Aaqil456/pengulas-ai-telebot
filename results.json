@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-04-02T21:30:54.528182",
+    "timestamp": "2025-04-02T22:24:56.266453",
     "messages": [
         {
             "id": 20345,
@@ -5555,6 +5555,14 @@
             "translated_text": "Nih link BingX CopyTrade, tengok nombor 251.",
             "referral_link": "https://bingx.com/invite/XX44WJ",
             "date": "2025-04-02 21:27:13+00:00"
+        },
+        {
+            "exchange_name": "Binance",
+            "channel_link": "https://t.me/binance_announcements",
+            "original_text": "FDUSD Attestation Report Confirms Full 1:1 Reserve Backing (2025-04-02)\n[https://www.binance.com/en/support/announcement/detail/a43abc2076b14f768669703ee5f93574](https://www.binance.com/en/support/announcement/detail/a43abc2076b14f768669703ee5f93574?utm_source=AnnouncementTG&utm_medium=GlobalCommunity&utm_campaign=AnnouncementBot)",
+            "translated_text": "Laporan Pengesahan FDUSD sahkan rizab sandaran penuh 1:1 (2025-04-02)\n[https://www.binance.com/en/support/announcement/detail/a43abc2076b14f768669703ee5f93574]",
+            "referral_link": "https://www.binance.info/activity/referral-entry/CPA/together-v4?hl=en&ref=CPA_00J27B927R",
+            "date": "2025-04-02 22:11:02+00:00"
         }
     ]
 }
