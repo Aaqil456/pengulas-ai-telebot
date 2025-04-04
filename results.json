@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-04-04T11:00:14.397433",
+    "timestamp": "2025-04-04T11:24:05.545506",
     "messages": [
         {
             "id": 20345,
@@ -6211,6 +6211,22 @@
             "translated_text": "\ud83d\udce2 Penyenaraian $KON, $REN dan $XYM ditarik balik\n\n\u270d\ufe0f Kami akan tarik balik pasangan dagangan KON/USDT, REN/USDT dan XYM/USDT dari platform kami dan tak akan sokong token-token ni sebagai aset pada masa hadapan.\n\n\ud83d\udcc6 Jadual Masa\n\n**Spot & Convert**\n\u2022 Dagangan pasangan KON/USDT, REN/USDT dan XYM/USDT di platform dagangan Spot Bybit tak akan disokong lagi selepas **10 Apr 2025, 8 pagi UTC**, dan semua pesanan akan dialih keluar secara automatik. $KON, $REN dan $XYM akan dinyahsenaraikan dari Convert pada tarikh yang sama.\n\n**Deposit dan Pengeluaran**:\n\u2022 Deposit token-token ini tak akan lagi tersedia selepas **9 Apr 2025, 8 pagi UTC.**\n\u2022 Pengeluaran token-token tersebut tak akan lagi tersedia selepas **9 Jul 2025, 8 pagi UTC.**",
             "referral_link": "https://signup-bicarakripto.taplink.ws/",
             "date": "2025-04-04 10:56:17+00:00"
+        },
+        {
+            "exchange_name": "Binance",
+            "channel_link": "https://t.me/binance_announcements",
+            "original_text": "Binance Introduces Revamped Launchpool and BNB Pages for Easier Airdrop Tracking \n[https://www.binance.com/en/support/announcement/detail/c2d0472431ee466c9b6310a272e79615](https://www.binance.com/en/support/announcement/detail/c2d0472431ee466c9b6310a272e79615?utm_source=AnnouncementTG&utm_medium=GlobalCommunity&utm_campaign=AnnouncementBot)",
+            "translated_text": "Binance dah naik taraf halaman Launchpool dan BNB. Senang sikit sekarang nak track airdrop.",
+            "referral_link": "https://www.binance.info/activity/referral-entry/CPA/together-v4?hl=en&ref=CPA_00J27B927R",
+            "date": "2025-04-04 11:02:07+00:00"
+        },
+        {
+            "exchange_name": "Gate.io",
+            "channel_link": "https://t.me/GateioOfficialNews",
+            "original_text": "\ud83d\udce3[**Gate.io #Launchpool: Stake $USDT $NUMI to Earn 400,000 $NUMI**](https://www.gate.io/announcements/article/44279)\n\n\ud83d\uddd3__ Staking Period: 06:00, Apr 5th - Apr 11th (UTC)\n__\u2709\ufe0f__Token Staked: USDT (For new comers) and ____$NUMI____\n____\ud83c\udf81____Total Reward: 400.000 ____$NUMI____\n____\u2728____Estimated APR: 425.83%\n__\n**Stake now:**\nhttps://www.gate.io/launchpool/NUMI?pid=260\n\nRead about [[**Launchpool Rules**](https://www.gate.io/help/guide/startup/37021/gate.io-launchpool-faq)]\n\n**Learn more:**\nhttps://www.gate.io/announcements/article/44279",
+            "translated_text": "\ud83d\udce3 Gate.io #Launchpool: Jana $NUMI dengan menaruh $USDT dan $NUMI! Dapat 400,000 $NUMI!\n\n\ud83d\uddd3 Tempoh Penaruhan: 06:00, 5 Apr - 11 Apr (UTC)\n\u2709\ufe0f Token yang perlu ditaruh: USDT (untuk pengguna baru) dan $NUMI\n\ud83c\udf81 Jumlah Ganjaran: 400,000 $NUMI\n\u2728 APR Anggaran: 425.83%\n\nJom sertai sekarang:\nhttps://www.gate.io/launchpool/NUMI?pid=260\n\nBaca peraturan Launchpool:\nhttps://www.gate.io/help/guide/startup/37021/gate.io-launchpool-faq\n\nMaklumat lanjut:\nhttps://www.gate.io/announcements/article/44279",
+            "referral_link": "https://www.gate.io/signup/BgASAV5W?ref_type=103",
+            "date": "2025-04-04 07:45:02+00:00"
         }
     ]
 }
