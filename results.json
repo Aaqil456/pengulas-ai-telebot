@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-04-09T12:42:15.462103",
+    "timestamp": "2025-04-09T13:18:54.276807",
     "messages": [
         {
             "id": 20345,
@@ -7707,6 +7707,22 @@
             "translated_text": "BingX dah tambah beberapa pasangan dagangan spot USDC.  Klik sini untuk maklumat lanjut \ud83d\udc48\u2728",
             "referral_link": "https://bingx.com/invite/XX44WJ",
             "date": "2025-04-09 12:02:24+00:00"
+        },
+        {
+            "exchange_name": "BingX",
+            "channel_link": "https://t.me/BingXAnnouncement",
+            "original_text": "**\ud83d\udce2 FDC Coin Will be Listed on BingX Spot on 2025-04-10 at 12:00 PM (UTC)!**\n\nXlink \ud83d\udc47\n[@FooDriver_dApp](https://x.com/FooDriver_dApp)\n\n[Listing Details](https://bingx.com/partner/FDClisting/32N0Lk?ch=community) \ud83d\udc48",
+            "translated_text": "\ud83d\udce2 FDC Coin akan disenaraikan di BingX Spot pada 10 April 2025, jam 12:00 tengah hari (UTC)!\n\nXlink \ud83d\udc47\n[@FooDriver_dApp](https://x.com/FooDriver_dApp)\n\nMaklumat Penyenaraian  \ud83d\udc48 [https://bingx.com/partner/FDClisting/32N0Lk?ch=community](https://bingx.com/partner/FDClisting/32N0Lk?ch=community)",
+            "referral_link": "https://bingx.com/invite/XX44WJ",
+            "date": "2025-04-09 13:00:21+00:00"
+        },
+        {
+            "exchange_name": "Gate.io",
+            "channel_link": "https://t.me/GateioOfficialNews",
+            "original_text": "\ud83d\udd14** ****Gate.io**** New Listing:** [**Babylon(BABY)**](https://gate.io/article/44354)\n\n\ud83d\udd17 Trading Pair: #BABY / #USDT\n\ud83d\udd17 Trading Starts:** 10:00 AM, April 10th (UTC)\n**\n\ud83d\udcb0** Trade ****$BABY**** Here**: https://www.gate.io/trade/BABY_USDT\n**\n**#Gateio #NewListing",
+            "translated_text": "\ud83d\udd14 **Gate.io Senarai Baru:** [Babylon(BABY)](https://gate.io/article/44354)\n\n\ud83d\udd17 Pasangan Dagangan: #BABY / #USDT\n\ud83d\udd17 Dagangan Bermula: 10:00 pagi, 10 April (UTC)\n\n\ud83d\udcb0 Jual beli $BABY di sini: https://www.gate.io/trade/BABY_USDT\n\n#Gateio #SenaraiBaru",
+            "referral_link": "https://www.gate.io/signup/BgASAV5W?ref_type=103",
+            "date": "2025-04-09 12:54:58+00:00"
         }
     ]
 }
