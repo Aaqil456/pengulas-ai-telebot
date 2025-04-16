@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-04-16T10:32:11.774061",
+    "timestamp": "2025-04-16T10:49:02.450113",
     "messages": [
         {
             "id": 20345,
@@ -10443,6 +10443,22 @@
             "translated_text": "\ud83c\udf89 Pendaftaran Pertandingan Dagangan WCTC S7 bernilai $5 Juta dah dibuka!](https://www.gate.io/announcements/article/44440)\n\n\ud83c\udf81 Daftar sekarang & dapatkan Red Packet selama tiga hari berturut-turut!\n\nDaftar di sini: https://www.gate.io/competition/wctc/s7\n\nKod sampul merah akan diumumkan di Gate_Post mengikut jadual berikut.\n\ud83d\udc49 https://www.gate.io/post/Gate_Post\n\n\ud83d\udd14 Masa Red Packet:\n17 April, 09:00 UTC\n18 April, 09:00 UTC\n19 April, 09:00 UTC\n\nMaklumat lanjut WCTC S7: https://www.gate.io/announcements/article/44440",
             "referral_link": "https://www.gate.io/signup/BgASAV5W?ref_type=103",
             "date": "2025-04-16 10:20:47+00:00"
+        },
+        {
+            "exchange_name": "MEXC",
+            "channel_link": "https://t.me/MEXCofficialNews",
+            "original_text": "\ud83d\udce3 A Friendly Security Reminder for MEXC API Users & Developers\n\nWe're aware of recent discussions about malicious SDKs affecting the wider crypto space. Maintaining a secure environment requires our collective effort. \n\nHere are some key tips for our API users:\n\u2705 Always source your SDKs directly from our official MEXC API documentation: mexc.com/mexc-api\n\ud83e\uddd0 Be cautious of third-party packages. Verify their authenticity through official channels.\n\ud83d\udd11 Treat your API keys like gold! Limit permissions, use IP whitelisting, and rotate them regularly.\n\ud83d\udee1\ufe0f Double-check code origins and URLs before executing.\n\nFor more: https://www.mexc.com/support/articles/17827791523373\n\nLet's keep our community safe together",
+            "translated_text": "\ud83d\udce3 Ingatan keselamatan untuk pengguna dan pembangun API MEXC\n\nKami perasan ada perbincangan tentang SDK berniat jahat yang menjejaskan industri kripto baru-baru ini.  Untuk kekal selamat, kita semua kena sama-sama jaga.\n\nNi beberapa tips penting untuk pengguna API:\n\u2705 Sentiasa muat turun SDK terus dari dokumentasi API MEXC rasmi: mexc.com/mexc-api\n\ud83e\uddd0 Berhati-hati dengan pakej pihak ketiga. Pastikan ia tulen melalui saluran rasmi.\n\ud83d\udd11 Rahsiakan API key macam harta! Hadkan kebenaran, guna IP whitelisting, dan tukar secara berkala.\n\ud83d\udee1\ufe0f Semak dua kali sumber kod dan URL sebelum jalankan.\n\nUntuk maklumat lanjut: https://www.mexc.com/support/articles/17827791523373\n\nJom sama-sama jaga keselamatan komuniti kita.",
+            "referral_link": "https://www.mexc.co/register?inviteCode=mexc-bicarak",
+            "date": "2025-04-16 10:40:11+00:00"
+        },
+        {
+            "exchange_name": "Bitget",
+            "channel_link": "https://t.me/Bitget_Announcements",
+            "original_text": "**\ud83d\udd25****AERGOUSDT now launched for futures trading and trading bots****\ud83d\udd6f**\n\n\u270d\ufe0fBitget has launched AERGOUSDT for futures trading with a maximum leverage of 20, along with support for futures trading bots, on April 16, 2025(UTC+8).\ud83d\udd6f\n\n**More Details ****\u2b07\ufe0f**\nhttps://www.bitget.com/support/articles/12560603825738\n\n**About Bitget** \ud83d\udd39\n[Website](https://www.bitget.com/) \ud83c\udf10  | [Twitter](https://x.com/bitgetglobal) \u274c\n[Telegram](https://t.me/BitgetENOfficial)\u2709\ufe0f | [Download](https://bitget.onelink.me/XqvW?af_xp=custom&pid=Community) \ud83c\udf4f\n[Discord](https://discord.gg/bitget) \ud83e\udd16   | [Reddit](https://www.reddit.com/r/BitgetReddit/) \ud83e\udd16",
+            "translated_text": "\ud83d\udd25 AERGOUSDT dah boleh didagangkan untuk futures trading dan trading bot! \ud83d\udd6f\n\nBitget dah lancarkan AERGOUSDT untuk futures trading dengan leverage maksimum 20x, termasuk sokongan untuk futures trading bot, pada 16 April 2025 (UTC+8). \ud83d\udd6f\n\nMaklumat lanjut \u2b07\ufe0f\nhttps://www.bitget.com/support/articles/12560603825738\n\nTentang Bitget \ud83d\udd39\n[Website](https://www.bitget.com/) \ud83c\udf10  | [Twitter](https://x.com/bitgetglobal) \u274c\n[Telegram](https://t.me/BitgetENOfficial)\u2709\ufe0f | [Muat Turun](https://bitget.onelink.me/XqvW?af_xp=custom&pid=Community) \ud83c\udf4f\n[Discord](https://discord.gg/bitget) \ud83e\udd16   | [Reddit](https://www.reddit.com/r/BitgetReddit/) \ud83e\udd16",
+            "referral_link": "https://partner.bitgetapp.com/bg/F7WAGD",
+            "date": "2025-04-16 10:41:29+00:00"
         }
     ]
 }
